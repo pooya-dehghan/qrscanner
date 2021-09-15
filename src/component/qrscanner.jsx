@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import QrReader from 'react-qr-reader'
-import './qr.css'
+
 class Test extends Component {
   state = {
     result: 'No result'
@@ -13,9 +13,11 @@ class Test extends Component {
       })
     }
   }
+
   handleError = err => {
     console.error(err)
   }
+  
   render() {
     return (
       <div className = "container">

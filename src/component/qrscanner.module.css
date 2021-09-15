@@ -1,0 +1,122 @@
+.mainContainer{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.showscanner{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hiddescanner{
+  display: none;
+ 
+}
+
+.showresult{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(120deg, #155799, #159957);
+}
+
+.hidderesult{
+  display: none;
+}
+
+.qr{
+  width: 800px;
+}
+
+.tag{
+  flex: 1;
+}
+
+.button{
+  width: 18vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.103);
+  border: 1px solid white;
+  border-radius:5px;
+  margin: 1rem;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover{
+  background-color: rgba(255, 255, 255, 0.205);
+
+}
+
+.buttonContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.address{
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .showresult{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(120deg, #155799, #159957);
+}
+
+ .button{
+  width: 50vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.103);
+  border: 1px solid white;
+  border-radius:5px;
+  margin: 1rem;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover{
+  background-color: rgba(255, 255, 255, 0.205);
+
+}
+
+.qr {
+  width: 300px;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+}
