@@ -35,13 +35,15 @@ const QR = ( ) => {
         </span>
       </div>
       <div className = {`${scanned ? styles.showresult : styles.hidderesult}`}>
-        <p className = {styles.address}>{address}</p>
+        <a className = {styles.address} href = {address ? address : null}>
+          {address}
+        </a>
         <div className = {styles.buttonContainer}>
-          <a className = {styles.button} onClick = {() => setScanned(false) }>
-            اسکن 
-          </a>
           <a className = {styles.button} href = {address}>
             ورود به لینک اسکن شده
+          </a>
+          <a className = {styles.button} onClick = {() => setScanned(false) }>
+            اسکن 
           </a>
         </div>
       </div>
